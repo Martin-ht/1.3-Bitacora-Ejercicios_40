@@ -59,5 +59,29 @@ public class Ecuaciones_cuadraticas {
         cF = c - c2;
         System.out.println("la factorizacion es = " + aF +"x´2 "+ bF + "x " + cF);
     }
-     
+          public static void calculo(double a, double b,double c){
+        double x1,x2,raiz;
+        raiz = Math.sqrt ((Math.pow(b, 2))- 4*a*c);
+        x1 = (-b + raiz)/(2*a);
+        x2 = (-b - raiz)/(2*a);
+        System.out.println("x1 = "+x1);
+        System.out.println("x2 = "+x2);
+            
+    }
+     public static void invesza(double a,double b,double c,double x1,double x2){
+        double x11,x22,elevado1,valor1,valor2,n,invesza,v;
+        float c1;
+        n = 2*a;
+        valor1 = -4*a*c;
+        valor2 = -4*a;
+        elevado1 = Math.pow(b, 2) + valor1;
+        v = elevado1/valor2;
+        if (v<x1) {
+            System.out.println("si esta dentro de los parametros");
+        }else{
+            System.out.println("no esta dentro de los parametros");
+        }
+        System.out.println("el valor de x1 inveso es = " + -b +" + raiz "+elevado1+"+"+valor2+"x"+"/"+ n);
+ 
+    }
 }
